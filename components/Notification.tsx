@@ -38,8 +38,7 @@ export function NotificationComponent() {
     try {
       setLoading(true);
       const headers = {
-        Authorization:
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJaTUw1R0UxNENGNzlCIiwibW9iaWxlTnVtYmVyIjoiKzkxODcwOTU0ODAxNSIsImlhdCI6MTc1MTQ1ODc2OCwiZXhwIjoxNzYxODI2NzY4fQ.9ox2Rl10CvXsDWiNnE1lLLaU1nyeTThkb1zGS4ycCMw",
+        Authorization: process.env.NEXT_PUBLIC_API_JWT,
         Platform: "ios",
         "Accept-Language": "en",
       };
